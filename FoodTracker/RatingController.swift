@@ -86,7 +86,7 @@ import UIKit
             button.widthAnchor.constraint(equalToConstant: starSize.width).isActive = true
             
             // Set the accessibility label
-            //button.accessibilityLabel = "Set \(rating) star rating"
+            button.accessibilityLabel = "Set \(index) star rating"
             
             // Setup the button action
             button.addTarget(self, action:
@@ -107,6 +107,29 @@ import UIKit
         for (index, button) in ratingButtons.enumerated() {
             // If the index of a button is less than the rating, that button should be selected.
             button.isSelected = index < rating
+            
+            // Set the hint string for the currently selected star
+            let hintString: String?
+            if rating == index + 1 {
+                hintString = "Tap to reset the rating to zero."
+            } else {
+                hintString = nil
+            }
+            
+            // Calculate the value string
+            let valueString: String
+            switch (rating) {
+            case 0:
+                valueString = "No rating set."
+            case 1:
+                valueString = "1 star set."
+            default:
+                valueString = "\(rating) stars set."
+            }
+            
+            // Assign the hint string and value string
+            button.accessibilityHint = hintString
+            button.accessibilityValue = valueString
             
         }
     }
