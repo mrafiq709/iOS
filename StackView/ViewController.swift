@@ -9,12 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    //MARK: Properties
+    @IBOutlet weak var imageName: UILabel!
+    
+    @IBOutlet weak var customImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
+    //MARK: Actions
+    @IBAction func setCustomImage(_ sender: UIButton) {
+        imageName.text = "Custom Flower"
+    }
+    
 
 }
 
