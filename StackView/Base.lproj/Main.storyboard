@@ -27,8 +27,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" image="flower2" translatesAutoresizingMaskIntoConstraints="NO" id="S27-nJ-A76">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" image="flower2" translatesAutoresizingMaskIntoConstraints="NO" id="S27-nJ-A76">
                                         <rect key="frame" x="0.0" y="28.5" width="374" height="751.5"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                        </accessibility>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="7RL-fA-vvG" appends="YES" id="pIc-BI-TfY"/>
+                                        </connections>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHb-g4-hdL">
                                         <rect key="frame" x="0.0" y="788" width="374" height="30"/>
@@ -51,9 +58,15 @@
                     </view>
                     <connections>
                         <outlet property="imageName" destination="ryj-sg-86o" id="UmK-XG-RFQ"/>
+                        <outlet property="photoImageView" destination="S27-nJ-A76" id="gp1-g9-wmz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7RL-fA-vvG">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="WWn-Vy-fUD"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="118.84057971014494" y="83.705357142857139"/>
         </scene>
