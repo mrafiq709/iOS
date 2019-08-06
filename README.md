@@ -1,16 +1,14 @@
 # WeatherApi
 Rest Api Calling
 
-
 Main Class:
 ------------
-
-    AppDelegate.swift
+`AppDelegate.swift`
 
 View Class:
 -----------
-    Main.storyboard
-    LaunchScrean.storyboard
+`Main.storyboard`
+`LaunchScrean.storyboard`
 
 NetWork Class:
 --------------
