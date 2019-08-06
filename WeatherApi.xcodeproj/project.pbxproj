@@ -13,6 +13,8 @@
 		003193B722F834820065644A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 003193B622F834820065644A /* Assets.xcassets */; };
 		003193BA22F834820065644A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003193B822F834820065644A /* LaunchScreen.storyboard */; };
 		003193C222F8354A0065644A /* NetworkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003193C122F8354A0065644A /* NetworkProcessor.swift */; };
+		00EE7C4C22F92BB40044CF5C /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EE7C4B22F92BB40044CF5C /* ForecastService.swift */; };
+		00EE7C4E22F931470044CF5C /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EE7C4D22F931470044CF5C /* CurrentWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		003193B922F834820065644A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		003193BB22F834820065644A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		003193C122F8354A0065644A /* NetworkProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProcessor.swift; sourceTree = "<group>"; };
+		00EE7C4B22F92BB40044CF5C /* ForecastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
+		00EE7C4D22F931470044CF5C /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				003193C122F8354A0065644A /* NetworkProcessor.swift */,
+				00EE7C4B22F92BB40044CF5C /* ForecastService.swift */,
+				00EE7C4D22F931470044CF5C /* CurrentWeather.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -146,6 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00EE7C4C22F92BB40044CF5C /* ForecastService.swift in Sources */,
+				00EE7C4E22F931470044CF5C /* CurrentWeather.swift in Sources */,
 				003193C222F8354A0065644A /* NetworkProcessor.swift in Sources */,
 				003193B222F834770065644A /* ViewController.swift in Sources */,
 				003193B022F834770065644A /* AppDelegate.swift in Sources */,
