@@ -34,7 +34,13 @@ class NetworkProcessor
                     switch httpResponse.statusCode{
                     case 200:
                         if let data = data{
-                            print(data)
+                            do{
+                                let jsonDictionary = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+                                completion(jsonDictionary as? [String: Any])
+                            }catch let error as NSError{
+                                print("Error JSON Retriving \(error.localizedDescription)")
+                            }
+                            
                         }
                     default:
                         print("HTTP Status Code: \(httpResponse.statusCode)")
