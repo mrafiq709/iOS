@@ -1,7 +1,5 @@
-# iOS
-Basic iOS Applications
-
-#FoodTracker
+# FoodTracker
+Basic iOS Applications: StackView, TableView, ButtonAction, ImageView and Tap-Gesture, Navigation Item
 
 
 
