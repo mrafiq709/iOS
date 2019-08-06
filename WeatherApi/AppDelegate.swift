@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        // <#For Testing, is NetworkProcessor class is working or not#>
+        // <#If working then it will print the data in bytes in console#>
+        /*
         let url = URL(string: "https://api.darksky.net/forecast/a4c79ac1342d72accd5f4f4547f97869/37.8267,-122.4233")!
         
         let networkProcessor = NetworkProcessor(url: url)
@@ -23,7 +26,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         networkProcessor.downloadJSONFromUrl{ (jsonDictionary) in
             print(jsonDictionary)
         }
+        */
+        /*
+        // <#initialized forcast service URL with APIKey#>
+        let forcastService = ForecastService(APIKey: "a4c79ac1342d72accd5f4f4547f97869")
         
+        // <#Get the weather data#>
+        forcastService.getForecast(latitude: 37.8267, longitude: -122.4233){ (currentWeather) in
+            print(currentWeather)
+        }
+        */
         return true
     }
 
