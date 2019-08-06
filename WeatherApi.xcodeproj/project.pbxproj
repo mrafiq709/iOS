@@ -60,6 +60,8 @@
 		003193AE22F834770065644A /* WeatherApi */ = {
 			isa = PBXGroup;
 			children = (
+				00EE7C5022F95E770044CF5C /* service */,
+				00EE7C4F22F95E660044CF5C /* network */,
 				003193C322F8359C0065644A /* model */,
 				003193AF22F834770065644A /* AppDelegate.swift */,
 				003193B122F834770065644A /* ViewController.swift */,
@@ -74,11 +76,25 @@
 		003193C322F8359C0065644A /* model */ = {
 			isa = PBXGroup;
 			children = (
-				003193C122F8354A0065644A /* NetworkProcessor.swift */,
-				00EE7C4B22F92BB40044CF5C /* ForecastService.swift */,
 				00EE7C4D22F931470044CF5C /* CurrentWeather.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		00EE7C4F22F95E660044CF5C /* network */ = {
+			isa = PBXGroup;
+			children = (
+				003193C122F8354A0065644A /* NetworkProcessor.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		00EE7C5022F95E770044CF5C /* service */ = {
+			isa = PBXGroup;
+			children = (
+				00EE7C4B22F92BB40044CF5C /* ForecastService.swift */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
