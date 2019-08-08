@@ -21,7 +21,7 @@ Istructions:
     5. First Name Text Field.Width = Middle Name Text Field.Width => Right Click + Drag and Drop First Name Text Field to the Middle Name Text Field + PopUp Window will appear, then select Equal Width / Width Related Options
     
     6. First Name Text Field.Width = Last Name Text Field.Width
-`
+
 
 References:
 -----------
