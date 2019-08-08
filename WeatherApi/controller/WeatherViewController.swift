@@ -31,6 +31,7 @@ class WeatherViewController: UIViewController {
                 DispatchQueue.main.async {
                     if let temperature = currentWeather.temparature{
                         self.temperatureTextLabel.text = "\(temperature)"
+                        print("Temperature: \(temperature)")
                     }else{
                         self.temperatureTextLabel.text = "-"
                     }
