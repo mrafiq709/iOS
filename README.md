@@ -12,7 +12,7 @@ Istructions:
 
     2. Root Stack View.Trailing = Superview.TrailingMargin
     
-    2. Root Stack View.Top = Top Layout Guide.Bottom + 20.0 => If you don't find Top Layout Guide, select iphone 7 from storyboard
+    2. Root Stack View.Top = Top Layout Guide.Bottom + 20.0 => If you don't find Top Layout Guide, select iphone 7 from storyboard and From File inspector unchecked the "Use Safe Area Layout Guide"
     
     3. Bottom Layout Guide.Top = Root Stack View.Bottom + 20.0
     
